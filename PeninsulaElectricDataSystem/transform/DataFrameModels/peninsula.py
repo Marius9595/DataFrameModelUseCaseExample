@@ -36,7 +36,7 @@ class PeninsularData(DataFrameModel):
         ]
 
     def zero_emissions(self)->List[str]:
-        return self.renewables() + [self.col_hydro.name, self.col_nuclear.name]
+        return self.renewables() + [self.col_nuclear.name]
 
     def interchanges(self) -> List[str]:
         return [self.col_balear_link.name, self.col_international_interchanges.name]
